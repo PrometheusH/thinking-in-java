@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.concurrent.*;
 
 public class MainThread {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         //这里是main线程执行的run方法，要想使用其他线程，需要将Runnable类提交给Thread
 //        LiftOff launch = new LiftOff();
 //        launch.run();
@@ -74,6 +74,28 @@ public class MainThread {
 //        }
 //        exec.execute(new SimplePriority(Thread.MAX_PRIORITY));
 //        exec.shutdown();
+
+        //后台进程
+//        for (int i = 0; i < 10; i++) {
+//            Thread thread = new Thread(new SimpleDeamons());
+//            thread.setDaemon(true);
+//            thread.start();
+//        }
+//        System.out.println("全部的后台进程已经启动");
+//        TimeUnit.MICROSECONDS.sleep(1750);
+
+        //后台进程的另一种实现，不知道为什么使用了DeamonThreadFactory就不能打印，后台线程也启动不了，好气啊。
+//        ExecutorService exec = Executors.newCachedThreadPool(new DeamonThreadFactory());
+////        ExecutorService exec = Executors.newCachedThreadPool();
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println(i);
+//            exec.execute(new DeamonFromFactory());
+//        }
+//        exec.shutdown();
+//        System.out.println("全部的后台进程已经启动");
+//        TimeUnit.MICROSECONDS.sleep(10000000);
+
+
 
     }
 
