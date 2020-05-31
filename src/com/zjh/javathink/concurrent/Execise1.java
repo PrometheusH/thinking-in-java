@@ -1,5 +1,8 @@
 package com.zjh.javathink.concurrent;
 
+/**
+ * 练习1
+ */
 public class Execise1 implements Runnable{
 
     public Execise1(){

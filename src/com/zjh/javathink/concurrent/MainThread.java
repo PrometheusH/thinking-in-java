@@ -96,6 +96,15 @@ public class MainThread {
 //        TimeUnit.MICROSECONDS.sleep(10000000);
 
 
+        //线程的第二种实现
+//        for (int i = 0; i < 5; i++) {
+//            new SimpleThread();
+//        }
+
+        //线程的第三种实现——没多大意义了
+
+
+
 
     }
 
