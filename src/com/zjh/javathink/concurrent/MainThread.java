@@ -59,6 +59,8 @@ public class MainThread {
 //            }
 //        }
 
+        //不用Exexutor的方法————没有，Callable就是配合Executor使用
+
 
         //休眠
 //        ExecutorService exec = Executors.newCachedThreadPool();
@@ -102,6 +104,16 @@ public class MainThread {
 //        }
 
         //线程的第三种实现——没多大意义了
+
+
+        //使用内部类来将线程代码隐藏在类中
+//        InnerThread1 innerThread1 = new InnerThread1("InnerThread1");
+
+
+        //练习10
+//        Execise10 execise10 = new Execise10();
+//        Integer integer = execise10.runTask(10).get();
+//        System.out.println(integer);
 
 
 
