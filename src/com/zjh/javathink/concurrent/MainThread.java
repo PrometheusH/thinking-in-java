@@ -115,8 +115,20 @@ public class MainThread {
 //        Integer integer = execise10.runTask(10).get();
 //        System.out.println(integer);
 
+        //测试join方法
+        //sleepy和grumpy都创建完了，都等着，因为dopey和doc将前面的线程加入了自己里面，和自己顺序执行，所以也在等着（实际上还是sleepy和grumpy等着）
+        //突然，grumpy中断了，那doc就不用等了，直接执行，完成。而dopey和它里面的sleepy一定要等够1500才能够继续执行。
+//        Sleeper
+//                sleepy = new Sleeper("Sleepy",1500),
+//                grumpy = new Sleeper("Grumpy",1500);
+//        Joiner dopey = new Joiner("Dopey",sleepy),
+//                doc = new Joiner("Doc",grumpy);
+//        grumpy.interrupt();
 
-
+        //创建有相应的用户界面
+        ResposiveUI r = new ResposiveUI();
+        System.in.read();
+        System.out.println(r.d);
 
     }
 
